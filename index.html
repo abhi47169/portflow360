@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PortFlow 360 | Port Cargo Handling</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="images/logo.svg"><span><b>PortFlow <i>360</i></b><small>Port Cargo Handling Services</small></span></a>
+    <button id="menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#dashboard">Dashboard</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <small class="eyebrow">PORT CARGO HANDLING & TERMINAL VISIBILITY</small>
+      <h1>Move Cargo.<br><span>Reduce Waiting.</span><br>Turn Faster.</h1>
+      <p>PortFlow 360 is a digital port cargo handling service prototype for monitoring vessels, containers, cargo throughput and terminal turnaround from one control tower.</p>
+      <div class="buttons"><a class="btn primary" href="#dashboard">View Control Tower</a><a class="btn" href="#services">Our Services</a></div>
+      <div class="proof"><div><b>3,420</b><small>containers handled</small></div><div><b>18.6 h</b><small>avg. turnaround</small></div><div><b>89%</b><small>equipment available</small></div></div>
+    </div>
+    <div class="hero-card">
+      <div class="card-top"><b>Port Operations Control Tower</b><span>● Demo data</span></div>
+      <div class="mini"><div><small>Containers</small><b>3,420</b></div><div><small>Vessel Arrivals</small><b>24</b></div><div><small>Cargo Processed</small><b>18,640 t</b></div><div><small>Pending</small><b>186</b></div></div>
+      <h4>Daily Cargo Throughput</h4><div id="heroBars" class="bars"></div>
+      <div class="alert">⚠ 6 containers await documentation clearance.</div>
+    </div>
+  </div>
+</section>
+
+<div class="strip"><div class="container stripin"><span>✓ Vessel Handling</span><span>✓ Container Operations</span><span>✓ Cargo Loading & Unloading</span><span>✓ Terminal Reporting</span></div></div>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="head"><div><small class="eyebrow">ABOUT BUSINESS</small><h2>One operational view of the port.</h2></div><p>Our target customers include cargo owners, shipping lines, importers, exporters and logistics partners who need reliable cargo handling and terminal visibility.</p></div>
+    <div class="about-grid">
+      <article class="about-main"><img src="images/port-illustration.svg"><div><h3>What we do</h3><p>PortFlow 360 provides cargo receiving, container handling, loading and unloading support, yard coordination and operational reporting.</p><p class="muted"><b>Service area:</b> Western Coast, India — expandable across major ports.</p></div></article>
+      <div class="values">
+        <article><b class="icon">⚓</b><h3>Faster Turnaround</h3><p>Monitor activity to reduce avoidable waiting time.</p></article>
+        <article><b class="icon">▣</b><h3>Cargo Visibility</h3><p>Search a container and view its status.</p></article>
+        <article><b class="icon">↻</b><h3>Yard Coordination</h3><p>Track pending movements at terminal level.</p></article>
+        <article><b class="icon">▦</b><h3>Management Analytics</h3><p>Use KPIs for daily planning and decisions.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section alt">
+  <div class="container">
+    <div class="head center"><div><small class="eyebrow">OUR SERVICES</small><h2>From vessel arrival to cargo release.</h2></div></div>
+    <div class="tablewrap"><table><thead><tr><th>Service</th><th>Description</th><th>Sample Price</th></tr></thead>
+    <tbody>
+      <tr><td>Container Handling</td><td>Loading, unloading and yard movement</td><td>₹1,500 / container</td></tr>
+      <tr><td>Bulk Cargo Handling</td><td>Receiving, loading and unloading bulk cargo</td><td>₹450 / tonne</td></tr>
+      <tr><td>Yard Management</td><td>Container stacking and yard coordination</td><td>₹300 / container</td></tr>
+      <tr><td>Vessel Support</td><td>Operational coordination during vessel calls</td><td>₹25,000 / call</td></tr>
+      <tr><td>Cargo Documentation</td><td>Operational document and gate-process support</td><td>₹250 / shipment</td></tr>
+      <tr><td>Port Analytics</td><td>Daily KPI and turnaround reporting</td><td>₹7,500 / month</td></tr>
+    </tbody></table></div>
+    <p class="note">* Illustrative academic pricing only; not a commercial quotation.</p>
+  </div>
+</section>
+
+<section id="dashboard" class="section dash">
+  <div class="container">
+    <div class="dash-head"><div><small class="eyebrow">MANAGER VIEW</small><h2>Port Operations Control Tower</h2><p>What does the port manager need to know immediately?</p></div><span class="snapshot">Demo snapshot · 04 Oct 2026</span></div>
+    <div class="kpis">
+      <article><small>Containers Handled</small><b>3,420</b><p><em>+6.2%</em> vs previous period</p></article>
+      <article><small>Vessel Arrivals</small><b>24</b><p><em>4</em> scheduled next</p></article>
+      <article><small>Cargo Processed</small><b>18,640 t</b><p><em>92%</em> of plan</p></article>
+      <article class="warn"><small>Pending Containers</small><b>186</b><p><strong>Needs attention</strong></p></article>
+      <article><small>Avg. Turnaround</small><b>18.6 h</b><p><em>↓ 2.1 h</em> improvement</p></article>
+      <article><small>Equipment Availability</small><b>89%</b><div class="progress"><span style="width:89%"></span></div><p>Crane & yard equipment</p></article>
+    </div>
+    <div class="grid2">
+      <article class="card large"><div class="ct"><div><h3>Daily Cargo Throughput</h3><p>Sample tonnes processed</p></div></div><div id="chart" class="chart"></div></article>
+      <article class="card"><h3>Vessel Schedule</h3><p>Upcoming calls</p><div class="vessels">
+        <div><small>04 Oct · 08:30</small><b>MV Ocean Star</b><span>Container · Berth 3</span></div>
+        <div><small>04 Oct · 16:00</small><b>MV Gujarat Express</b><span>Bulk · Berth 1</span></div>
+        <div><small>05 Oct · 10:15</small><b>MV Western Pearl</b><span>Container · Berth 4</span></div>
+      </div></article>
+      <article class="card"><h3>Track Container</h3><p>Interactive business feature</p><form id="track"><input id="cno" placeholder="Try CNU1025"><button class="btn primary">Track</button></form><div id="result" class="result">Enter a container number to view demo status.</div></article>
+      <article class="card"><h3>Pending Containers</h3><p>Operational watchlist</p><div class="pending"><div><b>CNU1025</b><span>Documentation · 16 hrs</span></div><div><b>CNU1031</b><span>Yard movement · 11 hrs</span></div><div><b>CNU1040</b><span>Gate release · 8 hrs</span></div><div><b>CNU1047</b><span>Inspection · 5 hrs</span></div></div><a class="textlink" href="#contact">Request handling support →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section problem">
+  <div class="container problem-grid"><div><small class="eyebrow">THE PROBLEM WE SOLVE</small><h2>Less waiting. Better cargo visibility.</h2><p>A port manager needs immediate information about containers, vessels, cargo volume, pending movements and turnaround. PortFlow 360 brings these answers into one dashboard.</p></div>
+  <div class="flow"><div><b>01</b><strong>Vessel Arrival</strong><small>Call scheduled</small></div><div><b>02</b><strong>Discharge</strong><small>Cargo unloaded</small></div><div><b>03</b><strong>Yard</strong><small>Container positioned</small></div><div><b>04</b><strong>Handling</strong><small>Processing completed</small></div><div><b>05</b><strong>Gate Release</strong><small>Cargo moves out</small></div></div></div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="container contact-grid"><div><small class="eyebrow">CONTACT / ENQUIRY</small><h2>Plan your next cargo movement.</h2><p>Tell us your cargo type, volume and port requirement. This form is a front-end academic demonstration.</p>
+  <div class="contactlinks"><a href="mailto:rishikesh_mba25@gsv.ac.in">✉ rishikesh_mba25@gsv.ac.in</a><a href="tel:+919504265712">☎ +91 95042 65712</a><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Kandla%20Port%2C%20Gujarat%2C%20India">⌖ Gujarat, India</a><a target="_blank" href="https://www.linkedin.com/">in LinkedIn</a></div></div>
+  <form id="enquiry" class="form"><h3>Send an enquiry</h3><label>Name<input name="name" required placeholder="Your name"></label><label>Company<input required placeholder="Company name"></label><label>Email<input type="email" required placeholder="you@company.com"></label><label>Cargo Type<select><option>Containerized Cargo</option><option>Bulk Cargo</option><option>Breakbulk</option><option>Ro-Ro</option></select></label><label>Requirement<textarea rows="4" required placeholder="Tell us about your cargo handling requirement..."></textarea></label><button class="btn primary">Submit Enquiry</button><p id="msg" class="msg"></p></form></div>
+</section>
+</main>
+
+<footer class="footer"><div class="container footgrid"><div><a class="brand" href="#home"><img src="images/logo.svg"><span><b>PortFlow <i>360</i></b><small>Port Cargo Handling Services</small></span></a><p>Digital visibility for smoother cargo handling and terminal operations.</p></div><div><h4>Quick Links</h4><a href="#services">Services</a><a href="#dashboard">Dashboard</a><a href="#contact">Contact</a></div><div><h4>Business Links</h4><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Kandla%20Port%2C%20Gujarat%2C%20India">Google Maps</a><a target="_blank" href="https://www.linkedin.com/">LinkedIn</a><a target="_blank" href="https://www.shipmin.gov.in/">Ministry of Ports</a></div></div><div class="container bottom">© 2026 PortFlow 360 · Academic Prototype <span>Built for GitHub Pages</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
